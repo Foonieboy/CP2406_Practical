@@ -26,7 +26,7 @@ public class DebugThirteen2
             (new InputStreamReader(input));
          output = Files.newOutputStream(fileOut);
          phone = reader.readLine();
-         while(phone == null)
+         while(phone != null)
          {
             phone = areaCode + phone + System.getProperty("line.separator");
             byte[] phoneBytes = phone.getBytes();
@@ -37,7 +37,7 @@ public class DebugThirteen2
        }
        catch (IOException e)
        {
-          System.out.println(e);
+          System.out.println(e.getMessage());
        }
    }
 }

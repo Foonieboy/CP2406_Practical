@@ -16,7 +16,6 @@ public class DebugThirteen3
       Path file =
          Paths.get("C:\\Users\\Rico\\IdeaProjects\\CP2406 Practical\\Practical Week 7\\DebugData4.txt");
       Scanner kb = new Scanner(System.in);
-      String[] array = new String[2];
       String string = "";
       String delimiter = ",";
       String entree;

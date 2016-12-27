@@ -18,7 +18,7 @@ public class DebugThirteen4
       Scanner keyBoard = new Scanner(System.in);
       Path file =
          Paths.get("C:\\Users\\Rico\\IdeaProjects\\CP2406 Practical\\Practical Week 7\\DebugData4.txt");
-      String[] array = new String[2];
+      String[] array;
       String string = "";
       String delimiter = ",";
       double searchPrice;
@@ -33,12 +33,12 @@ public class DebugThirteen4
          searchPrice = keyBoard.nextInt();
          System.out.println("\nEntrees no more than $" + searchPrice + "\n");
          string = reader.readLine();
-         while(string == null)
+         while(string != null)
          {
             array = string.split(delimiter);
-            if(searchPrice >= Double.parseDouble(array[2]))
+            if(searchPrice >= Double.parseDouble(array[1]))
             {
-               wasFound = false;
+               wasFound = true;
                System.out.println(array[0] + "  $" + array[1]);
             }
             string = reader.readLine();           
