@@ -41,7 +41,7 @@ public class DebugThirteen4
                wasFound = true;
                System.out.println(array[0] + "  $" + array[1]);
             }
-            string = reader.readLine();           
+            string = reader.readLine();
          }
          if(!wasFound)
            System.out.println("No entrees found under $" + searchPrice);
