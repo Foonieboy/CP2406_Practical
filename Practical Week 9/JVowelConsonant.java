@@ -60,7 +60,11 @@ public class JVowelConsonant extends JFrame implements ActionListener {
         {
             desc.setText("It is a consonant");
         }
+        JButton var = (JButton) e.getSource();
+        int y = new Random().nextInt(characterList.size());
+        var.setText(characterList.get(y));
     }
+
     public static void main(String[] args)
     {
         JVowelConsonant test = new JVowelConsonant();
