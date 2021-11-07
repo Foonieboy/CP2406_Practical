@@ -14,7 +14,7 @@ public class CountByAnything {
         {
             if(numb%(userEntry*10) == 0)
             {
-                System.out.println(numb);
+                System.out.println(numb + "  \n ");
             }
             else
             {
